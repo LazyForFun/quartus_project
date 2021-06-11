@@ -1,0 +1,11 @@
+|counter
+clk => next_number[0].CLK
+clk => next_number[1].CLK
+clk => next_number[2].CLK
+clk => next_number[3].CLK
+input_number[0] <= next_number[0].DB_MAX_OUTPUT_PORT_TYPE
+input_number[1] <= next_number[1].DB_MAX_OUTPUT_PORT_TYPE
+input_number[2] <= next_number[2].DB_MAX_OUTPUT_PORT_TYPE
+input_number[3] <= next_number[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

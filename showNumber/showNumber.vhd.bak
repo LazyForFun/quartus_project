@@ -1,0 +1,6 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity showNumber is
+port(first_number, second_number, third_number, fourth_number : out std_logic_vector(6 downto 0)
+		);

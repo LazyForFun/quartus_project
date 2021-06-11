@@ -1,0 +1,9 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith;
+use ieee.std_logic_unsigned;
+
+entity compare is
+port(pillar1 : in std_logic_vector(3 downto 0);
+		pillar2 : in std_logic_vector(3 downto 0);
+		);

@@ -1,0 +1,135 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 136 304)
+	(text "dice" (rect 5 0 28 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 272 25 284)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "dice" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "dice" (rect 21 27 44 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 120 32)
+		(output)
+		(text "red1" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "red1" (rect 74 27 99 41)(font "Arial" (font_size 8)))
+		(line (pt 120 32)(pt 104 32))
+	)
+	(port
+		(pt 120 48)
+		(output)
+		(text "red2" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "red2" (rect 74 43 99 57)(font "Arial" (font_size 8)))
+		(line (pt 120 48)(pt 104 48))
+	)
+	(port
+		(pt 120 64)
+		(output)
+		(text "red3" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "red3" (rect 74 59 99 73)(font "Arial" (font_size 8)))
+		(line (pt 120 64)(pt 104 64))
+	)
+	(port
+		(pt 120 80)
+		(output)
+		(text "red4" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "red4" (rect 74 75 99 89)(font "Arial" (font_size 8)))
+		(line (pt 120 80)(pt 104 80))
+	)
+	(port
+		(pt 120 96)
+		(output)
+		(text "red5" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "red5" (rect 74 91 99 105)(font "Arial" (font_size 8)))
+		(line (pt 120 96)(pt 104 96))
+	)
+	(port
+		(pt 120 112)
+		(output)
+		(text "red6" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "red6" (rect 74 107 99 121)(font "Arial" (font_size 8)))
+		(line (pt 120 112)(pt 104 112))
+	)
+	(port
+		(pt 120 128)
+		(output)
+		(text "red7" (rect 0 0 25 14)(font "Arial" (font_size 8)))
+		(text "red7" (rect 74 123 99 137)(font "Arial" (font_size 8)))
+		(line (pt 120 128)(pt 104 128))
+	)
+	(port
+		(pt 120 144)
+		(output)
+		(text "green1" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "green1" (rect 59 139 99 153)(font "Arial" (font_size 8)))
+		(line (pt 120 144)(pt 104 144))
+	)
+	(port
+		(pt 120 160)
+		(output)
+		(text "green2" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "green2" (rect 59 155 99 169)(font "Arial" (font_size 8)))
+		(line (pt 120 160)(pt 104 160))
+	)
+	(port
+		(pt 120 176)
+		(output)
+		(text "green3" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "green3" (rect 59 171 99 185)(font "Arial" (font_size 8)))
+		(line (pt 120 176)(pt 104 176))
+	)
+	(port
+		(pt 120 192)
+		(output)
+		(text "green4" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "green4" (rect 59 187 99 201)(font "Arial" (font_size 8)))
+		(line (pt 120 192)(pt 104 192))
+	)
+	(port
+		(pt 120 208)
+		(output)
+		(text "green5" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "green5" (rect 59 203 99 217)(font "Arial" (font_size 8)))
+		(line (pt 120 208)(pt 104 208))
+	)
+	(port
+		(pt 120 224)
+		(output)
+		(text "green6" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "green6" (rect 59 219 99 233)(font "Arial" (font_size 8)))
+		(line (pt 120 224)(pt 104 224))
+	)
+	(port
+		(pt 120 240)
+		(output)
+		(text "green7" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "green7" (rect 59 235 99 249)(font "Arial" (font_size 8)))
+		(line (pt 120 240)(pt 104 240))
+	)
+	(drawing
+		(rectangle (rect 16 16 104 272))
+	)
+)

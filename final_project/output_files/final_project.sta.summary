@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'switch2'
+Slack : -4.220
+TNS   : -24.181
+
+Type  : Slow 1100mV 85C Model Setup 'switch1'
+Slack : -4.129
+TNS   : -24.423
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -1.565
+TNS   : -25.946
+
+Type  : Slow 1100mV 85C Model Setup 'pulse'
+Slack : -0.818
+TNS   : -2.883
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pulse'
+Slack : 0.589
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'switch1'
+Slack : 0.609
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'switch2'
+Slack : 0.638
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -34.300
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pulse'
+Slack : -0.724
+TNS   : -4.421
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'switch2'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'switch1'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'switch2'
+Slack : -4.378
+TNS   : -25.563
+
+Type  : Slow 1100mV 0C Model Setup 'switch1'
+Slack : -4.276
+TNS   : -25.774
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -1.573
+TNS   : -26.703
+
+Type  : Slow 1100mV 0C Model Setup 'pulse'
+Slack : -0.894
+TNS   : -3.069
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pulse'
+Slack : 0.659
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'switch1'
+Slack : 0.676
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'switch2'
+Slack : 0.691
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -34.530
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pulse'
+Slack : -0.724
+TNS   : -4.428
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'switch2'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'switch1'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'switch2'
+Slack : -1.719
+TNS   : -7.613
+
+Type  : Fast 1100mV 85C Model Setup 'switch1'
+Slack : -1.698
+TNS   : -7.908
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -0.118
+TNS   : -0.148
+
+Type  : Fast 1100mV 85C Model Setup 'pulse'
+Slack : 0.232
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'switch2'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pulse'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'switch1'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'switch2'
+Slack : -0.162
+TNS   : -1.182
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'switch1'
+Slack : -0.123
+TNS   : -0.832
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.092
+TNS   : -2.789
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pulse'
+Slack : -0.090
+TNS   : -0.354
+
+Type  : Fast 1100mV 0C Model Setup 'switch2'
+Slack : -1.586
+TNS   : -6.998
+
+Type  : Fast 1100mV 0C Model Setup 'switch1'
+Slack : -1.561
+TNS   : -7.177
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -0.006
+TNS   : -0.006
+
+Type  : Fast 1100mV 0C Model Setup 'pulse'
+Slack : 0.259
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pulse'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'switch2'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'switch1'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'switch2'
+Slack : -0.138
+TNS   : -0.970
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'switch1'
+Slack : -0.105
+TNS   : -0.708
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pulse'
+Slack : -0.093
+TNS   : -0.369
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.092
+TNS   : -2.807
+
+------------------------------------------------------------

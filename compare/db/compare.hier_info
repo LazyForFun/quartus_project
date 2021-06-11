@@ -1,0 +1,44 @@
+|compare
+pillar1[0] => LessThan0.IN4
+pillar1[0] => LessThan1.IN4
+pillar1[0] => LessThan3.IN4
+pillar1[1] => LessThan0.IN3
+pillar1[1] => LessThan1.IN3
+pillar1[1] => LessThan3.IN3
+pillar1[2] => LessThan0.IN2
+pillar1[2] => LessThan1.IN2
+pillar1[2] => LessThan3.IN2
+pillar1[3] => LessThan0.IN1
+pillar1[3] => LessThan1.IN1
+pillar1[3] => LessThan3.IN1
+pillar2[0] => LessThan0.IN8
+pillar2[0] => LessThan2.IN4
+pillar2[0] => LessThan4.IN4
+pillar2[1] => LessThan0.IN7
+pillar2[1] => LessThan2.IN3
+pillar2[1] => LessThan4.IN3
+pillar2[2] => LessThan0.IN6
+pillar2[2] => LessThan2.IN2
+pillar2[2] => LessThan4.IN2
+pillar2[3] => LessThan0.IN5
+pillar2[3] => LessThan2.IN1
+pillar2[3] => LessThan4.IN1
+player_number[0] => LessThan1.IN8
+player_number[0] => LessThan2.IN8
+player_number[0] => LessThan3.IN8
+player_number[0] => LessThan4.IN8
+player_number[1] => LessThan1.IN7
+player_number[1] => LessThan2.IN7
+player_number[1] => LessThan3.IN7
+player_number[1] => LessThan4.IN7
+player_number[2] => LessThan1.IN6
+player_number[2] => LessThan2.IN6
+player_number[2] => LessThan3.IN6
+player_number[2] => LessThan4.IN6
+player_number[3] => LessThan1.IN5
+player_number[3] => LessThan2.IN5
+player_number[3] => LessThan3.IN5
+player_number[3] => LessThan4.IN5
+result <= result.DB_MAX_OUTPUT_PORT_TYPE
+
+

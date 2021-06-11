@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity counter is
+port(clk : in std_logic;
+		number : out std_logic_vector(3 downto 0));
+end counter;
+
+architecture test of counter is
+signal next_number : std_logic_vector(3 downto 0)
+begin
+
+	number <= next_number;
+end test;

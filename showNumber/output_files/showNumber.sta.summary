@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'get_switch2'
+Slack : -11.222
+TNS   : -43.385
+
+Type  : Slow 1100mV 85C Model Setup 'get_switch1'
+Slack : -11.027
+TNS   : -42.605
+
+Type  : Slow 1100mV 85C Model Setup 'DE[0]'
+Slack : -10.356
+TNS   : -39.879
+
+Type  : Slow 1100mV 85C Model Hold 'DE[0]'
+Slack : 1.816
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'get_switch1'
+Slack : 3.892
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'get_switch2'
+Slack : 4.017
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'get_switch2'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'get_switch1'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DE[0]'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'get_switch2'
+Slack : -11.063
+TNS   : -42.788
+
+Type  : Slow 1100mV 0C Model Setup 'get_switch1'
+Slack : -10.888
+TNS   : -42.088
+
+Type  : Slow 1100mV 0C Model Setup 'DE[0]'
+Slack : -10.292
+TNS   : -39.231
+
+Type  : Slow 1100mV 0C Model Hold 'DE[0]'
+Slack : 1.507
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'get_switch1'
+Slack : 3.538
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'get_switch2'
+Slack : 3.627
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'get_switch2'
+Slack : 0.262
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'get_switch1'
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DE[0]'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'get_switch2'
+Slack : -5.684
+TNS   : -21.590
+
+Type  : Fast 1100mV 85C Model Setup 'get_switch1'
+Slack : -5.559
+TNS   : -21.090
+
+Type  : Fast 1100mV 85C Model Setup 'DE[0]'
+Slack : -4.442
+TNS   : -16.630
+
+Type  : Fast 1100mV 85C Model Hold 'DE[0]'
+Slack : 0.988
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'get_switch1'
+Slack : 1.880
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'get_switch2'
+Slack : 1.986
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DE[0]'
+Slack : -0.018
+TNS   : -0.053
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'get_switch2'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'get_switch1'
+Slack : 0.008
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'get_switch2'
+Slack : -5.139
+TNS   : -19.511
+
+Type  : Fast 1100mV 0C Model Setup 'get_switch1'
+Slack : -5.008
+TNS   : -18.987
+
+Type  : Fast 1100mV 0C Model Setup 'DE[0]'
+Slack : -3.904
+TNS   : -14.571
+
+Type  : Fast 1100mV 0C Model Hold 'DE[0]'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'get_switch1'
+Slack : 1.647
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'get_switch2'
+Slack : 1.756
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DE[0]'
+Slack : -0.003
+TNS   : -0.009
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'get_switch2'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'get_switch1'
+Slack : 0.004
+TNS   : 0.000
+
+------------------------------------------------------------
