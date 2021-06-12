@@ -1,0 +1,1354 @@
+TimeQuest Timing Analyzer report for buzzer_test
+Sat Jun 12 16:53:59 2021
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Propagation Delay
+ 17. Minimum Propagation Delay
+ 18. Slow 1100mV 85C Model Metastability Report
+ 19. Slow 1100mV 0C Model Fmax Summary
+ 20. Slow 1100mV 0C Model Setup Summary
+ 21. Slow 1100mV 0C Model Hold Summary
+ 22. Slow 1100mV 0C Model Recovery Summary
+ 23. Slow 1100mV 0C Model Removal Summary
+ 24. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 25. Setup Times
+ 26. Hold Times
+ 27. Clock to Output Times
+ 28. Minimum Clock to Output Times
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Slow 1100mV 0C Model Metastability Report
+ 32. Fast 1100mV 85C Model Setup Summary
+ 33. Fast 1100mV 85C Model Hold Summary
+ 34. Fast 1100mV 85C Model Recovery Summary
+ 35. Fast 1100mV 85C Model Removal Summary
+ 36. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 37. Setup Times
+ 38. Hold Times
+ 39. Clock to Output Times
+ 40. Minimum Clock to Output Times
+ 41. Propagation Delay
+ 42. Minimum Propagation Delay
+ 43. Fast 1100mV 85C Model Metastability Report
+ 44. Fast 1100mV 0C Model Setup Summary
+ 45. Fast 1100mV 0C Model Hold Summary
+ 46. Fast 1100mV 0C Model Recovery Summary
+ 47. Fast 1100mV 0C Model Removal Summary
+ 48. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 49. Setup Times
+ 50. Hold Times
+ 51. Clock to Output Times
+ 52. Minimum Clock to Output Times
+ 53. Propagation Delay
+ 54. Minimum Propagation Delay
+ 55. Fast 1100mV 0C Model Metastability Report
+ 56. Multicorner Timing Analysis Summary
+ 57. Setup Times
+ 58. Hold Times
+ 59. Clock to Output Times
+ 60. Minimum Clock to Output Times
+ 61. Propagation Delay
+ 62. Minimum Propagation Delay
+ 63. Board Trace Model Assignments
+ 64. Input Transition Times
+ 65. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 66. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 67. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 68. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 69. Setup Transfers
+ 70. Hold Transfers
+ 71. Recovery Transfers
+ 72. Removal Transfers
+ 73. Report TCCS
+ 74. Report RSKM
+ 75. Unconstrained Paths
+ 76. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
+; Revision Name      ; buzzer_test                                        ;
+; Device Family      ; Cyclone V                                          ;
+; Device Name        ; 5CGXFC7C7F23C8                                     ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
+;     Processors 5-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                   ;
++-------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------+
+; Clock Name  ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets         ;
++-------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------+
+; CLK         ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK }         ;
+; Sound_RESET ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Sound_RESET } ;
++-------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------------+
+
+
++--------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary               ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 186.22 MHz ; 186.22 MHz      ; CLK        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1100mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; CLK   ; -4.370 ; -169.214           ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1100mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; CLK   ; 0.519 ; 0.000              ;
++-------+-------+--------------------+
+
+
++----------------------------------------+
+; Slow 1100mV 85C Model Recovery Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -1.487 ; -62.584               ;
++-------+--------+-----------------------+
+
+
++---------------------------------------+
+; Slow 1100mV 85C Model Removal Summary ;
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; CLK   ; 0.334 ; 0.000                 ;
++-------+-------+-----------------------+
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++-------------+--------+----------------------------+
+; Clock       ; Slack  ; End Point TNS              ;
++-------------+--------+----------------------------+
+; CLK         ; -0.724 ; -51.165                    ;
+; Sound_RESET ; 0.236  ; 0.000                      ;
++-------------+--------+----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++-------------+-------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+-------------+-------+-------+------------+-----------------+
+; BeatS[*]    ; CLK         ; 6.861 ; 7.328 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; 3.685 ; 4.096 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; 6.535 ; 6.776 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; 6.861 ; 7.328 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; 6.224 ; 6.756 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; 3.093 ; 3.582 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; 6.168 ; 6.484 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; 5.776 ; 6.188 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; 3.782 ; 4.368 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; 5.676 ; 6.215 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; 4.263 ; 4.990 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 4.776 ; 4.831 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; 4.405 ; 4.464 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; 8.240 ; 8.338 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; 8.057 ; 8.110 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; 5.414 ; 5.539 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; 5.280 ; 5.305 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; 5.785 ; 5.845 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; 8.240 ; 8.338 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; 5.641 ; 5.737 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 4.456 ; 4.495 ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 1.781 ; 1.840 ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 4.130 ; 4.121 ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; 4.456 ; 4.495 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 4.091 ; 4.417 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 1.704 ; 1.842 ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; 4.394 ; 4.411 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 3.700 ; 3.811 ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 1.611 ; 1.870 ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; 4.184 ; 4.399 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; 2.690 ; 3.227 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; 4.797 ; 4.831 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; 6.254 ; 6.352 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; 6.072 ; 6.126 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; 3.426 ; 3.549 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; 3.286 ; 3.310 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; 3.798 ; 3.859 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; 6.254 ; 6.352 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; 3.644 ; 3.742 ; Rise       ; Sound_RESET     ;
++-------------+-------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++-------------+-------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+-------------+--------+--------+------------+-----------------+
+; BeatS[*]    ; CLK         ; -0.728 ; -0.890 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; -1.094 ; -1.283 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; -1.684 ; -1.695 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; -1.805 ; -2.035 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; -1.463 ; -1.666 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; -0.728 ; -0.890 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; -1.658 ; -1.719 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; -1.210 ; -1.240 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; -1.396 ; -1.536 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; -1.150 ; -1.282 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; -1.793 ; -2.199 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; -0.068 ; -0.077 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; -0.846 ; -0.925 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; -0.340 ; -0.418 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; -0.866 ; -1.006 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; -0.525 ; -0.622 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; -0.340 ; -0.418 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; -0.813 ; -0.849 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; -1.061 ; -1.202 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; -0.704 ; -0.772 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 0.486  ; 0.356  ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 0.207  ; 0.150  ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 0.157  ; 0.143  ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; -0.281 ; -0.309 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 0.175  ; -0.121 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 0.375  ; 0.356  ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; -0.089 ; -0.107 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 0.173  ; 0.143  ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 0.486  ; 0.247  ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; -0.159 ; -0.329 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; -0.440 ; -0.802 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; -0.308 ; -0.298 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; -0.012 ; -0.088 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; -0.613 ; -0.755 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; -0.257 ; -0.341 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; -0.012 ; -0.088 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; -0.542 ; -0.576 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; -0.775 ; -0.911 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; -0.384 ; -0.449 ; Rise       ; Sound_RESET     ;
++-------------+-------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 12.097 ; 12.258 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 10.820 ; 10.846 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 11.641 ; 11.914 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 11.599 ; 11.914 ; Fall       ; Sound_RESET     ;
++-----------+-------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 9.796 ; 9.948 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 8.807 ; 8.829 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 8.950 ; 9.096 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 8.950 ; 9.096 ; Fall       ; Sound_RESET     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+----+--------+--------+----+
+; Input Port ; Output Port ; RR ; RF     ; FR     ; FF ;
++------------+-------------+----+--------+--------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 13.668 ; 13.560 ;    ;
++------------+-------------+----+--------+--------+----+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 9.270 ; 9.110 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
+----------------------------------------------
+; Slow 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 180.57 MHz ; 180.57 MHz      ; CLK        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1100mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; CLK   ; -4.538 ; -169.359          ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1100mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; CLK   ; 0.409 ; 0.000             ;
++-------+-------+-------------------+
+
+
++---------------------------------------+
+; Slow 1100mV 0C Model Recovery Summary ;
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; CLK   ; -1.242 ; -51.027              ;
++-------+--------+----------------------+
+
+
++--------------------------------------+
+; Slow 1100mV 0C Model Removal Summary ;
++-------+-------+----------------------+
+; Clock ; Slack ; End Point TNS        ;
++-------+-------+----------------------+
+; CLK   ; 0.136 ; 0.000                ;
++-------+-------+----------------------+
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
++-------------+--------+---------------------------+
+; Clock       ; Slack  ; End Point TNS             ;
++-------------+--------+---------------------------+
+; CLK         ; -0.724 ; -51.111                   ;
+; Sound_RESET ; 0.274  ; 0.000                     ;
++-------------+--------+---------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++-------------+-------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+-------------+-------+-------+------------+-----------------+
+; BeatS[*]    ; CLK         ; 6.629 ; 7.069 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; 3.662 ; 3.992 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; 6.387 ; 6.691 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; 6.629 ; 7.069 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; 6.013 ; 6.489 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; 2.924 ; 3.333 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; 6.354 ; 6.441 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; 5.661 ; 6.020 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; 3.834 ; 4.186 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; 5.408 ; 5.925 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; 4.104 ; 4.803 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 4.714 ; 4.713 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; 4.083 ; 4.288 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; 8.339 ; 8.473 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; 8.120 ; 8.225 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; 5.415 ; 5.555 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; 5.278 ; 5.318 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; 5.872 ; 5.952 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; 8.339 ; 8.473 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; 5.704 ; 5.832 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 4.469 ; 4.514 ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 1.759 ; 1.842 ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 4.245 ; 4.260 ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; 4.403 ; 4.462 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 4.092 ; 4.399 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 1.719 ; 1.915 ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; 4.469 ; 4.514 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 3.727 ; 3.892 ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 1.594 ; 1.844 ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; 4.224 ; 4.498 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; 2.633 ; 3.189 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; 4.946 ; 5.002 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; 6.289 ; 6.423 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; 6.069 ; 6.174 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; 3.361 ; 3.501 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; 3.220 ; 3.258 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; 3.822 ; 3.901 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; 6.289 ; 6.423 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; 3.644 ; 3.772 ; Rise       ; Sound_RESET     ;
++-------------+-------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++-------------+-------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+-------------+--------+--------+------------+-----------------+
+; BeatS[*]    ; CLK         ; -0.530 ; -0.728 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; -0.968 ; -1.189 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; -1.669 ; -1.738 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; -1.601 ; -1.856 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; -1.336 ; -1.568 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; -0.530 ; -0.728 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; -1.634 ; -1.773 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; -1.143 ; -1.214 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; -1.279 ; -1.485 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; -0.995 ; -1.180 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; -1.530 ; -2.005 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; -0.042 ; -0.069 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; -0.750 ; -0.801 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; -0.172 ; -0.272 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; -0.737 ; -0.919 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; -0.397 ; -0.509 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; -0.172 ; -0.272 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; -0.748 ; -0.803 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; -0.962 ; -1.130 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; -0.615 ; -0.706 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 0.572  ; 0.366  ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 0.180  ; 0.098  ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 0.161  ; 0.121  ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; -0.289 ; -0.341 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 0.248  ; -0.036 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 0.426  ; 0.366  ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; -0.101 ; -0.146 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 0.158  ; 0.086  ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 0.572  ; 0.343  ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; -0.168 ; -0.345 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; -0.320 ; -0.722 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; -0.344 ; -0.347 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; 0.102  ; 0.003  ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; -0.525 ; -0.662 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; -0.168 ; -0.270 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; 0.102  ; 0.003  ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; -0.521 ; -0.576 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; -0.724 ; -0.863 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; -0.344 ; -0.438 ; Rise       ; Sound_RESET     ;
++-------------+-------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 12.079 ; 12.228 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 10.742 ; 10.771 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 11.450 ; 11.763 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 11.431 ; 11.763 ; Fall       ; Sound_RESET     ;
++-----------+-------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 9.783 ; 9.944 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 8.760 ; 8.792 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 8.730 ; 8.888 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 8.730 ; 8.888 ; Fall       ; Sound_RESET     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+----+--------+--------+----+
+; Input Port ; Output Port ; RR ; RF     ; FR     ; FF ;
++------------+-------------+----+--------+--------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 13.527 ; 13.379 ;    ;
++------------+-------------+----+--------+--------+----+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 9.133 ; 8.929 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
+---------------------------------------------
+; Slow 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++-------------------------------------+
+; Fast 1100mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; CLK   ; -1.806 ; -66.764            ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Fast 1100mV 85C Model Hold Summary ;
++-------+-------+--------------------+
+; Clock ; Slack ; End Point TNS      ;
++-------+-------+--------------------+
+; CLK   ; 0.087 ; 0.000              ;
++-------+-------+--------------------+
+
+
++----------------------------------------+
+; Fast 1100mV 85C Model Recovery Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; CLK   ; -0.986 ; -42.409               ;
++-------+--------+-----------------------+
+
+
++---------------------------------------+
+; Fast 1100mV 85C Model Removal Summary ;
++-------+-------+-----------------------+
+; Clock ; Slack ; End Point TNS         ;
++-------+-------+-----------------------+
+; CLK   ; 0.120 ; 0.000                 ;
++-------+-------+-----------------------+
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++-------------+--------+----------------------------+
+; Clock       ; Slack  ; End Point TNS              ;
++-------------+--------+----------------------------+
+; CLK         ; -0.091 ; -3.995                     ;
+; Sound_RESET ; -0.034 ; -0.390                     ;
++-------------+--------+----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++-------------+-------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+-------------+-------+-------+------------+-----------------+
+; BeatS[*]    ; CLK         ; 2.605 ; 3.362 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; 1.384 ; 2.124 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; 2.367 ; 3.001 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; 2.605 ; 3.362 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; 2.391 ; 3.165 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; 1.147 ; 1.762 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; 2.199 ; 2.907 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; 2.181 ; 2.794 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; 1.468 ; 2.183 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; 2.232 ; 2.974 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; 1.689 ; 2.554 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 1.801 ; 2.203 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; 1.740 ; 2.216 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; 3.395 ; 3.866 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; 3.358 ; 3.806 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; 2.390 ; 2.923 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; 2.274 ; 2.738 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; 2.445 ; 2.934 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; 3.395 ; 3.866 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; 2.378 ; 2.859 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 1.686 ; 2.173 ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 0.625 ; 1.116 ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 1.546 ; 1.962 ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; 1.686 ; 2.173 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 1.612 ; 2.159 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 0.625 ; 1.118 ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; 1.647 ; 2.105 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 1.367 ; 1.827 ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 0.650 ; 1.158 ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; 1.577 ; 2.113 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; 1.192 ; 1.979 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; 1.801 ; 2.265 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; 2.568 ; 3.039 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; 2.531 ; 2.979 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; 1.563 ; 2.096 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; 1.447 ; 1.911 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; 1.618 ; 2.107 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; 2.568 ; 3.039 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; 1.551 ; 2.032 ; Rise       ; Sound_RESET     ;
++-------------+-------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++-------------+-------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+-------------+--------+--------+------------+-----------------+
+; BeatS[*]    ; CLK         ; -0.219 ; -0.730 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; -0.494 ; -1.029 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; -0.520 ; -1.005 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; -0.688 ; -1.287 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; -0.546 ; -1.109 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; -0.219 ; -0.730 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; -0.509 ; -1.012 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; -0.369 ; -0.839 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; -0.501 ; -1.050 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; -0.405 ; -0.972 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; -0.727 ; -1.369 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 0.069  ; -0.377 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; -0.259 ; -0.730 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; -0.117 ; -0.585 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; -0.313 ; -0.763 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; -0.209 ; -0.703 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; -0.117 ; -0.585 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; -0.249 ; -0.709 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; -0.369 ; -0.840 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; -0.222 ; -0.682 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 0.108  ; -0.330 ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 0.078  ; -0.391 ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 0.055  ; -0.359 ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; -0.116 ; -0.577 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; -0.009 ; -0.535 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 0.108  ; -0.331 ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; -0.016 ; -0.458 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 0.092  ; -0.330 ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 0.101  ; -0.393 ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; -0.076 ; -0.553 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; -0.327 ; -1.004 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; -0.102 ; -0.537 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; -0.088 ; -0.553 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; -0.300 ; -0.790 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; -0.203 ; -0.738 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; -0.088 ; -0.553 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; -0.243 ; -0.703 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; -0.379 ; -0.835 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; -0.200 ; -0.655 ; Rise       ; Sound_RESET     ;
++-------------+-------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 5.301 ; 5.516 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 4.828 ; 4.942 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 5.706 ; 5.961 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 5.706 ; 5.961 ; Fall       ; Sound_RESET     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 4.489 ; 4.688 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 4.099 ; 4.209 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 4.137 ; 4.327 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 4.137 ; 4.327 ; Fall       ; Sound_RESET     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 6.022 ; 6.280 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 4.344 ; 4.574 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
+----------------------------------------------
+; Fast 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1100mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; CLK   ; -1.602 ; -59.442           ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1100mV 0C Model Hold Summary ;
++-------+-------+-------------------+
+; Clock ; Slack ; End Point TNS     ;
++-------+-------+-------------------+
+; CLK   ; 0.051 ; 0.000             ;
++-------+-------+-------------------+
+
+
++---------------------------------------+
+; Fast 1100mV 0C Model Recovery Summary ;
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; CLK   ; -0.826 ; -35.239              ;
++-------+--------+----------------------+
+
+
++--------------------------------------+
+; Fast 1100mV 0C Model Removal Summary ;
++-------+-------+----------------------+
+; Clock ; Slack ; End Point TNS        ;
++-------+-------+----------------------+
+; CLK   ; 0.051 ; 0.000                ;
++-------+-------+----------------------+
+
+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
++-------------+--------+---------------------------+
+; Clock       ; Slack  ; End Point TNS             ;
++-------------+--------+---------------------------+
+; CLK         ; -0.091 ; -4.066                    ;
+; Sound_RESET ; -0.021 ; -0.135                    ;
++-------------+--------+---------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++-------------+-------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+-------------+-------+-------+------------+-----------------+
+; BeatS[*]    ; CLK         ; 2.444 ; 3.145 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; 1.297 ; 1.967 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; 2.260 ; 2.866 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; 2.444 ; 3.145 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; 2.261 ; 2.985 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; 1.054 ; 1.638 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; 2.141 ; 2.780 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; 2.083 ; 2.670 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; 1.350 ; 2.013 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; 2.094 ; 2.784 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; 1.551 ; 2.335 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 1.734 ; 2.139 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; 1.536 ; 2.012 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; 3.150 ; 3.625 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; 3.124 ; 3.578 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; 2.140 ; 2.650 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; 2.016 ; 2.474 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; 2.201 ; 2.678 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; 3.150 ; 3.625 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; 2.151 ; 2.628 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 1.660 ; 2.137 ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 0.626 ; 1.105 ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 1.560 ; 1.981 ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; 1.660 ; 2.137 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 1.600 ; 2.127 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 0.619 ; 1.113 ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; 1.652 ; 2.111 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 1.367 ; 1.834 ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 0.628 ; 1.123 ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; 1.562 ; 2.089 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; 1.103 ; 1.826 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; 1.783 ; 2.240 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; 2.443 ; 2.918 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; 2.417 ; 2.871 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; 1.433 ; 1.943 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; 1.309 ; 1.767 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; 1.494 ; 1.971 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; 2.443 ; 2.918 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; 1.444 ; 1.921 ; Rise       ; Sound_RESET     ;
++-------------+-------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++-------------+-------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+-------------+--------+--------+------------+-----------------+
+; BeatS[*]    ; CLK         ; -0.178 ; -0.693 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; -0.455 ; -0.982 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; -0.509 ; -0.989 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; -0.609 ; -1.177 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; -0.517 ; -1.058 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; -0.178 ; -0.693 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; -0.501 ; -0.993 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; -0.329 ; -0.798 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; -0.454 ; -1.005 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; -0.348 ; -0.899 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; -0.641 ; -1.282 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 0.053  ; -0.393 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; -0.217 ; -0.694 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; -0.060 ; -0.531 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; -0.288 ; -0.746 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; -0.167 ; -0.652 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; -0.060 ; -0.531 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; -0.211 ; -0.670 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; -0.329 ; -0.812 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; -0.198 ; -0.657 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 0.100  ; -0.351 ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 0.048  ; -0.417 ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 0.021  ; -0.399 ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; -0.122 ; -0.579 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; -0.026 ; -0.537 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 0.094  ; -0.351 ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; -0.045 ; -0.490 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 0.067  ; -0.365 ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 0.100  ; -0.386 ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; -0.084 ; -0.557 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; -0.276 ; -0.923 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; -0.122 ; -0.558 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; -0.053 ; -0.522 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; -0.301 ; -0.785 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; -0.187 ; -0.699 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; -0.053 ; -0.522 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; -0.232 ; -0.691 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; -0.355 ; -0.834 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; -0.196 ; -0.654 ; Rise       ; Sound_RESET     ;
++-------------+-------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Clock to Output Times                                                  ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 5.074 ; 5.222 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 4.609 ; 4.681 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 5.416 ; 5.606 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 5.416 ; 5.606 ; Fall       ; Sound_RESET     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 4.270 ; 4.409 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 3.886 ; 3.955 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 3.902 ; 4.032 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 3.902 ; 4.032 ; Fall       ; Sound_RESET     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------+
+; Propagation Delay                                  ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 5.748 ; 6.060 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 4.086 ; 4.374 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
+---------------------------------------------
+; Fast 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+----------+-------+----------+---------+---------------------+
+; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -4.538   ; 0.051 ; -1.487   ; 0.051   ; -0.724              ;
+;  CLK             ; -4.538   ; 0.051 ; -1.487   ; 0.051   ; -0.724              ;
+;  Sound_RESET     ; N/A      ; N/A   ; N/A      ; N/A     ; -0.034              ;
+; Design-wide TNS  ; -169.359 ; 0.0   ; -62.584  ; 0.0     ; -51.165             ;
+;  CLK             ; -169.359 ; 0.000 ; -62.584  ; 0.000   ; -51.165             ;
+;  Sound_RESET     ; N/A      ; N/A   ; N/A      ; N/A     ; -0.390              ;
++------------------+----------+-------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++-------------+-------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+-------------+-------+-------+------------+-----------------+
+; BeatS[*]    ; CLK         ; 6.861 ; 7.328 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; 3.685 ; 4.096 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; 6.535 ; 6.776 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; 6.861 ; 7.328 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; 6.224 ; 6.756 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; 3.093 ; 3.582 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; 6.354 ; 6.484 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; 5.776 ; 6.188 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; 3.834 ; 4.368 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; 5.676 ; 6.215 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; 4.263 ; 4.990 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 4.776 ; 4.831 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; 4.405 ; 4.464 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; 8.339 ; 8.473 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; 8.120 ; 8.225 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; 5.415 ; 5.555 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; 5.280 ; 5.318 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; 5.872 ; 5.952 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; 8.339 ; 8.473 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; 5.704 ; 5.832 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 4.469 ; 4.514 ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 1.781 ; 1.842 ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 4.245 ; 4.260 ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; 4.456 ; 4.495 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 4.092 ; 4.417 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 1.719 ; 1.915 ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; 4.469 ; 4.514 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 3.727 ; 3.892 ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 1.611 ; 1.870 ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; 4.224 ; 4.498 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; 2.690 ; 3.227 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; 4.946 ; 5.002 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; 6.289 ; 6.423 ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; 6.072 ; 6.174 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; 3.426 ; 3.549 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; 3.286 ; 3.310 ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; 3.822 ; 3.901 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; 6.289 ; 6.423 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; 3.644 ; 3.772 ; Rise       ; Sound_RESET     ;
++-------------+-------------+-------+-------+------------+-----------------+
+
+
++----------------------------------------------------------------------------+
+; Hold Times                                                                 ;
++-------------+-------------+--------+--------+------------+-----------------+
+; Data Port   ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-------------+-------------+--------+--------+------------+-----------------+
+; BeatS[*]    ; CLK         ; -0.178 ; -0.693 ; Rise       ; CLK             ;
+;  BeatS[0]   ; CLK         ; -0.455 ; -0.982 ; Rise       ; CLK             ;
+;  BeatS[1]   ; CLK         ; -0.509 ; -0.989 ; Rise       ; CLK             ;
+;  BeatS[2]   ; CLK         ; -0.609 ; -1.177 ; Rise       ; CLK             ;
+;  BeatS[3]   ; CLK         ; -0.517 ; -1.058 ; Rise       ; CLK             ;
+;  BeatS[4]   ; CLK         ; -0.178 ; -0.693 ; Rise       ; CLK             ;
+;  BeatS[5]   ; CLK         ; -0.501 ; -0.993 ; Rise       ; CLK             ;
+;  BeatS[6]   ; CLK         ; -0.329 ; -0.798 ; Rise       ; CLK             ;
+;  BeatS[7]   ; CLK         ; -0.454 ; -1.005 ; Rise       ; CLK             ;
+;  BeatS[8]   ; CLK         ; -0.348 ; -0.899 ; Rise       ; CLK             ;
+;  BeatS[9]   ; CLK         ; -0.641 ; -1.282 ; Rise       ; CLK             ;
+; S_P_N       ; CLK         ; 0.069  ; -0.069 ; Rise       ; CLK             ;
+; Sound_RESET ; CLK         ; -0.217 ; -0.694 ; Rise       ; CLK             ;
+; ToneS[*]    ; CLK         ; -0.060 ; -0.272 ; Rise       ; CLK             ;
+;  ToneS[0]   ; CLK         ; -0.288 ; -0.746 ; Rise       ; CLK             ;
+;  ToneS[1]   ; CLK         ; -0.167 ; -0.509 ; Rise       ; CLK             ;
+;  ToneS[2]   ; CLK         ; -0.060 ; -0.272 ; Rise       ; CLK             ;
+;  ToneS[3]   ; CLK         ; -0.211 ; -0.670 ; Rise       ; CLK             ;
+;  ToneS[4]   ; CLK         ; -0.329 ; -0.812 ; Rise       ; CLK             ;
+;  ToneS[5]   ; CLK         ; -0.198 ; -0.657 ; Rise       ; CLK             ;
+; BeatS[*]    ; Sound_RESET ; 0.572  ; 0.366  ; Rise       ; Sound_RESET     ;
+;  BeatS[0]   ; Sound_RESET ; 0.207  ; 0.150  ; Rise       ; Sound_RESET     ;
+;  BeatS[1]   ; Sound_RESET ; 0.161  ; 0.143  ; Rise       ; Sound_RESET     ;
+;  BeatS[2]   ; Sound_RESET ; -0.116 ; -0.309 ; Rise       ; Sound_RESET     ;
+;  BeatS[3]   ; Sound_RESET ; 0.248  ; -0.036 ; Rise       ; Sound_RESET     ;
+;  BeatS[4]   ; Sound_RESET ; 0.426  ; 0.366  ; Rise       ; Sound_RESET     ;
+;  BeatS[5]   ; Sound_RESET ; -0.016 ; -0.107 ; Rise       ; Sound_RESET     ;
+;  BeatS[6]   ; Sound_RESET ; 0.173  ; 0.143  ; Rise       ; Sound_RESET     ;
+;  BeatS[7]   ; Sound_RESET ; 0.572  ; 0.343  ; Rise       ; Sound_RESET     ;
+;  BeatS[8]   ; Sound_RESET ; -0.076 ; -0.329 ; Rise       ; Sound_RESET     ;
+;  BeatS[9]   ; Sound_RESET ; -0.276 ; -0.722 ; Rise       ; Sound_RESET     ;
+; S_P_N       ; Sound_RESET ; -0.102 ; -0.298 ; Rise       ; Sound_RESET     ;
+; ToneS[*]    ; Sound_RESET ; 0.102  ; 0.003  ; Rise       ; Sound_RESET     ;
+;  ToneS[0]   ; Sound_RESET ; -0.300 ; -0.662 ; Rise       ; Sound_RESET     ;
+;  ToneS[1]   ; Sound_RESET ; -0.168 ; -0.270 ; Rise       ; Sound_RESET     ;
+;  ToneS[2]   ; Sound_RESET ; 0.102  ; 0.003  ; Rise       ; Sound_RESET     ;
+;  ToneS[3]   ; Sound_RESET ; -0.232 ; -0.576 ; Rise       ; Sound_RESET     ;
+;  ToneS[4]   ; Sound_RESET ; -0.355 ; -0.834 ; Rise       ; Sound_RESET     ;
+;  ToneS[5]   ; Sound_RESET ; -0.196 ; -0.438 ; Rise       ; Sound_RESET     ;
++-------------+-------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+-------------+--------+--------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 12.097 ; 12.258 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 10.820 ; 10.846 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 11.641 ; 11.914 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 11.599 ; 11.914 ; Fall       ; Sound_RESET     ;
++-----------+-------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+-------------+-------+-------+------------+-----------------+
+; Do_Re_Mio ; CLK         ; 4.270 ; 4.409 ; Rise       ; CLK             ;
+; Soundend  ; CLK         ; 3.886 ; 3.955 ; Rise       ; CLK             ;
+; Do_Re_Mio ; Sound_RESET ; 3.902 ; 4.032 ; Rise       ; Sound_RESET     ;
+; Do_Re_Mio ; Sound_RESET ; 3.902 ; 4.032 ; Fall       ; Sound_RESET     ;
++-----------+-------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+----+--------+--------+----+
+; Input Port ; Output Port ; RR ; RF     ; FR     ; FF ;
++------------+-------------+----+--------+--------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 13.668 ; 13.560 ;    ;
++------------+-------------+----+--------+--------+----+
+
+
++----------------------------------------------------+
+; Minimum Propagation Delay                          ;
++------------+-------------+----+-------+-------+----+
+; Input Port ; Output Port ; RR ; RF    ; FR    ; FF ;
++------------+-------------+----+-------+-------+----+
+; S_P_N      ; Do_Re_Mio   ;    ; 4.086 ; 4.374 ;    ;
++------------+-------------+----+-------+-------+----+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                ;
++-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin       ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Soundend  ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; Do_Re_Mio ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++-----------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------+
+; Input Transition Times                                         ;
++-------------+--------------+-----------------+-----------------+
+; Pin         ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------+--------------+-----------------+-----------------+
+; CLK         ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; Sound_RESET ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; S_P_N       ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[0]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[9]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[8]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[7]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[6]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[5]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[4]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[3]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[2]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; BeatS[1]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ToneS[0]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ToneS[1]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ToneS[2]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ToneS[3]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ToneS[4]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ToneS[5]    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------+--------------+-----------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Soundend  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.0409 V           ; 0.192 V                              ; 0.125 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.0409 V          ; 0.192 V                             ; 0.125 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; Do_Re_Mio ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.041 V            ; 0.19 V                               ; 0.126 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.041 V           ; 0.19 V                              ; 0.126 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Soundend  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.027 V            ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.18e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.027 V           ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.18e-10 s                 ; No                        ; Yes                       ;
+; Do_Re_Mio ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.0273 V           ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.0273 V          ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Soundend  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; Do_Re_Mio ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin       ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Soundend  ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; Do_Re_Mio ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
++-----------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------+
+; Setup Transfers                                                    ;
++-------------+----------+----------+----------+----------+----------+
+; From Clock  ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------+----------+----------+----------+----------+----------+
+; CLK         ; CLK      ; 1589     ; 0        ; 0        ; 0        ;
+; Sound_RESET ; CLK      ; 1601     ; 790      ; 0        ; 0        ;
++-------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------+
+; Hold Transfers                                                     ;
++-------------+----------+----------+----------+----------+----------+
+; From Clock  ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------+----------+----------+----------+----------+----------+
+; CLK         ; CLK      ; 1589     ; 0        ; 0        ; 0        ;
+; Sound_RESET ; CLK      ; 1601     ; 790      ; 0        ; 0        ;
++-------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------+
+; Recovery Transfers                                                 ;
++-------------+----------+----------+----------+----------+----------+
+; From Clock  ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------+----------+----------+----------+----------+----------+
+; Sound_RESET ; CLK      ; 46       ; 46       ; 0        ; 0        ;
++-------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++--------------------------------------------------------------------+
+; Removal Transfers                                                  ;
++-------------+----------+----------+----------+----------+----------+
+; From Clock  ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-------------+----------+----------+----------+----------+----------+
+; Sound_RESET ; CLK      ; 46       ; 46       ; 0        ; 0        ;
++-------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 18    ; 18   ;
+; Unconstrained Input Port Paths  ; 600   ; 600  ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 5     ; 5    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+    Info: Processing started: Sat Jun 12 16:53:52 2021
+Info: Command: quartus_sta buzzer_test -c buzzer_test
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 21 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'buzzer_test.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLK CLK
+    Info (332105): create_clock -period 1.000 -name Sound_RESET Sound_RESET
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -4.370
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.370            -169.214 CLK 
+Info (332146): Worst-case hold slack is 0.519
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.519               0.000 CLK 
+Info (332146): Worst-case recovery slack is -1.487
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.487             -62.584 CLK 
+Info (332146): Worst-case removal slack is 0.334
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.334               0.000 CLK 
+Info (332146): Worst-case minimum pulse width slack is -0.724
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.724             -51.165 CLK 
+    Info (332119):     0.236               0.000 Sound_RESET 
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -4.538
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.538            -169.359 CLK 
+Info (332146): Worst-case hold slack is 0.409
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.409               0.000 CLK 
+Info (332146): Worst-case recovery slack is -1.242
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.242             -51.027 CLK 
+Info (332146): Worst-case removal slack is 0.136
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.136               0.000 CLK 
+Info (332146): Worst-case minimum pulse width slack is -0.724
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.724             -51.111 CLK 
+    Info (332119):     0.274               0.000 Sound_RESET 
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.806
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.806             -66.764 CLK 
+Info (332146): Worst-case hold slack is 0.087
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.087               0.000 CLK 
+Info (332146): Worst-case recovery slack is -0.986
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.986             -42.409 CLK 
+Info (332146): Worst-case removal slack is 0.120
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.120               0.000 CLK 
+Info (332146): Worst-case minimum pulse width slack is -0.091
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.091              -3.995 CLK 
+    Info (332119):    -0.034              -0.390 Sound_RESET 
+Info: Analyzing Fast 1100mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.602
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.602             -59.442 CLK 
+Info (332146): Worst-case hold slack is 0.051
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.051               0.000 CLK 
+Info (332146): Worst-case recovery slack is -0.826
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.826             -35.239 CLK 
+Info (332146): Worst-case removal slack is 0.051
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.051               0.000 CLK 
+Info (332146): Worst-case minimum pulse width slack is -0.091
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.091              -4.066 CLK 
+    Info (332119):    -0.021              -0.135 Sound_RESET 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5117 megabytes
+    Info: Processing ended: Sat Jun 12 16:53:59 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
+
+
