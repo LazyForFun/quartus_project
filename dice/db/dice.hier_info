@@ -1,0 +1,18 @@
+|dice
+result => ~NO_FANOUT~
+red[6] <= <GND>
+red[5] <= <GND>
+red[4] <= <GND>
+red[3] <= <GND>
+red[2] <= <GND>
+red[1] <= <GND>
+red[0] <= <GND>
+green[6] <= <VCC>
+green[5] <= <VCC>
+green[4] <= <VCC>
+green[3] <= <VCC>
+green[2] <= <VCC>
+green[1] <= <VCC>
+green[0] <= <VCC>
+
+

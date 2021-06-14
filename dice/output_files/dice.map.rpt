@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dice
-Sun Jun 13 14:07:36 2021
+Mon Jun 14 10:22:15 2021
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -10,7 +10,13 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -34,22 +40,27 @@ agreement for further details.
 
 
 
-+--------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                             ;
-+-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Sun Jun 13 14:07:36 2021          ;
-; Quartus II 64-Bit Version   ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
-; Revision Name               ; dice                                       ;
-; Top-level Entity Name       ; dice                                       ;
-; Family                      ; Cyclone V                                  ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                  ;
-; Total registers             ; N/A until Partition Merge                  ;
-; Total pins                  ; N/A until Partition Merge                  ;
-; Total virtual pins          ; N/A until Partition Merge                  ;
-; Total block memory bits     ; N/A until Partition Merge                  ;
-; Total PLLs                  ; N/A until Partition Merge                  ;
-; Total DLLs                  ; N/A until Partition Merge                  ;
-+-----------------------------+--------------------------------------------+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++---------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Jun 14 10:22:15 2021      ;
+; Quartus II 64-Bit Version       ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
+; Revision Name                   ; dice                                       ;
+; Top-level Entity Name           ; dice                                       ;
+; Family                          ; Cyclone V                                  ;
+; Logic utilization (in ALMs)     ; N/A                                        ;
+; Total registers                 ; 0                                          ;
+; Total pins                      ; 15                                         ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 0                                          ;
+; Total DSP Blocks                ; 0                                          ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI PMA TX Serializers   ; 0                                          ;
+; Total PLLs                      ; 0                                          ;
+; Total DLLs                      ; 0                                          ;
++---------------------------------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -151,54 +162,128 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+; dice.vhd                         ; yes             ; User VHDL File  ; C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------+---------+
+
+
++------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary          ;
++---------------------------------------------+--------+
+; Resource                                    ; Usage  ;
++---------------------------------------------+--------+
+; Estimate of Logic utilization (ALMs needed) ; 0      ;
+;                                             ;        ;
+; Combinational ALUT usage for logic          ; 0      ;
+;     -- 7 input functions                    ; 0      ;
+;     -- 6 input functions                    ; 0      ;
+;     -- 5 input functions                    ; 0      ;
+;     -- 4 input functions                    ; 0      ;
+;     -- <=3 input functions                  ; 0      ;
+;                                             ;        ;
+; Dedicated logic registers                   ; 0      ;
+;                                             ;        ;
+; I/O pins                                    ; 15     ;
+; Total DSP Blocks                            ; 0      ;
+; Maximum fan-out node                        ; result ;
+; Maximum fan-out                             ; 1      ;
+; Total fan-out                               ; 15     ;
+; Average fan-out                             ; 0.50   ;
++---------------------------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; |dice                      ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 15   ; 0            ; |dice               ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
+; boundary_port         ; 15                          ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Sun Jun 13 14:07:35 2021
+    Info: Processing started: Mon Jun 14 10:22:13 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dice -c dice
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file dice.vhd
     Info (12022): Found design unit 1: dice-test
     Info (12023): Found entity 1: dice
 Info (12127): Elaborating entity "dice" for the top level hierarchy
-Error (10819): Netlist error at dice.vhd(18): can't infer register for red[6] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "red[6]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for red[5] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "red[5]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for red[4] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "red[4]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for red[3] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "red[3]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for red[2] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "red[2]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for red[1] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "red[1]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for red[0] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "red[0]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for green[6] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "green[6]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for green[5] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "green[5]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for green[4] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "green[4]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for green[3] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "green[3]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for green[2] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "green[2]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for green[1] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "green[1]" at dice.vhd(12)
-Error (10819): Netlist error at dice.vhd(18): can't infer register for green[0] because it changes value on both rising and falling edges of the clock File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Info (10041): Inferred latch for "green[0]" at dice.vhd(12)
-Error (10822): HDL error at dice.vhd(14): couldn't implement registers for assignments on this clock edge File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 14
-Error (10822): HDL error at dice.vhd(18): couldn't implement registers for assignments on this clock edge File: C:/Users/lazy/Desktop/project/quartus_project/dice/dice.vhd Line: 18
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 17 errors, 1 warning
-    Error: Peak virtual memory: 4748 megabytes
-    Error: Processing ended: Sun Jun 13 14:07:36 2021
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "red[6]" is stuck at GND
+    Warning (13410): Pin "red[5]" is stuck at GND
+    Warning (13410): Pin "red[4]" is stuck at GND
+    Warning (13410): Pin "red[3]" is stuck at GND
+    Warning (13410): Pin "red[2]" is stuck at GND
+    Warning (13410): Pin "red[1]" is stuck at GND
+    Warning (13410): Pin "red[0]" is stuck at GND
+    Warning (13410): Pin "green[6]" is stuck at VCC
+    Warning (13410): Pin "green[5]" is stuck at VCC
+    Warning (13410): Pin "green[4]" is stuck at VCC
+    Warning (13410): Pin "green[3]" is stuck at VCC
+    Warning (13410): Pin "green[2]" is stuck at VCC
+    Warning (13410): Pin "green[1]" is stuck at VCC
+    Warning (13410): Pin "green[0]" is stuck at VCC
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "result"
+Info (21057): Implemented 15 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 14 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Mon Jun 14 10:22:15 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

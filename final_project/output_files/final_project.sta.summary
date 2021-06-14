@@ -2,196 +2,148 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'switch2'
-Slack : -4.220
-TNS   : -24.181
-
 Type  : Slow 1100mV 85C Model Setup 'switch1'
-Slack : -4.129
-TNS   : -24.423
+Slack : -4.542
+TNS   : -16.915
 
 Type  : Slow 1100mV 85C Model Setup 'clk'
-Slack : -1.565
-TNS   : -25.946
+Slack : -1.579
+TNS   : -18.357
 
 Type  : Slow 1100mV 85C Model Setup 'pulse'
-Slack : -0.818
-TNS   : -2.883
+Slack : -0.834
+TNS   : -2.367
 
 Type  : Slow 1100mV 85C Model Hold 'clk'
-Slack : 0.481
+Slack : 0.417
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'pulse'
-Slack : 0.589
+Slack : 0.438
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'switch1'
-Slack : 0.609
-TNS   : 0.000
-
-Type  : Slow 1100mV 85C Model Hold 'switch2'
-Slack : 0.638
+Slack : 0.822
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -0.724
-TNS   : -34.300
+TNS   : -29.838
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pulse'
 Slack : -0.724
-TNS   : -4.421
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'switch2'
-Slack : 0.123
-TNS   : 0.000
+TNS   : -4.420
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'switch1'
-Slack : 0.257
+Slack : 0.291
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'switch2'
-Slack : -4.378
-TNS   : -25.563
-
 Type  : Slow 1100mV 0C Model Setup 'switch1'
-Slack : -4.276
-TNS   : -25.774
+Slack : -4.839
+TNS   : -17.993
 
 Type  : Slow 1100mV 0C Model Setup 'clk'
-Slack : -1.573
-TNS   : -26.703
+Slack : -1.570
+TNS   : -19.530
 
 Type  : Slow 1100mV 0C Model Setup 'pulse'
-Slack : -0.894
-TNS   : -3.069
+Slack : -0.917
+TNS   : -2.485
 
 Type  : Slow 1100mV 0C Model Hold 'clk'
-Slack : 0.406
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'pulse'
-Slack : 0.659
+Slack : 0.486
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'switch1'
-Slack : 0.676
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'switch2'
-Slack : 0.691
+Slack : 0.733
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -0.724
-TNS   : -34.530
+TNS   : -30.404
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pulse'
 Slack : -0.724
-TNS   : -4.428
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'switch2'
-Slack : 0.077
-TNS   : 0.000
+TNS   : -4.430
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'switch1'
-Slack : 0.160
+Slack : 0.332
 TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'switch2'
-Slack : -1.719
-TNS   : -7.613
 
 Type  : Fast 1100mV 85C Model Setup 'switch1'
-Slack : -1.698
-TNS   : -7.908
+Slack : -1.680
+TNS   : -6.351
 
 Type  : Fast 1100mV 85C Model Setup 'clk'
-Slack : -0.118
-TNS   : -0.148
+Slack : -0.110
+TNS   : -0.110
 
 Type  : Fast 1100mV 85C Model Setup 'pulse'
-Slack : 0.232
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'clk'
-Slack : 0.136
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'switch2'
-Slack : 0.187
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'pulse'
-Slack : 0.223
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'switch1'
-Slack : 0.310
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'switch2'
-Slack : -0.162
-TNS   : -1.182
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'switch1'
-Slack : -0.123
-TNS   : -0.832
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
-Slack : -0.092
-TNS   : -2.789
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pulse'
-Slack : -0.090
-TNS   : -0.354
-
-Type  : Fast 1100mV 0C Model Setup 'switch2'
-Slack : -1.586
-TNS   : -6.998
-
-Type  : Fast 1100mV 0C Model Setup 'switch1'
-Slack : -1.561
-TNS   : -7.177
-
-Type  : Fast 1100mV 0C Model Setup 'clk'
-Slack : -0.006
-TNS   : -0.006
-
-Type  : Fast 1100mV 0C Model Setup 'pulse'
 Slack : 0.259
 TNS   : 0.000
 
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.122
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pulse'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'switch1'
+Slack : 0.284
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.092
+TNS   : -2.429
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pulse'
+Slack : -0.084
+TNS   : -0.334
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'switch1'
+Slack : 0.020
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'switch1'
+Slack : -1.530
+TNS   : -5.882
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Fast 1100mV 0C Model Setup 'pulse'
+Slack : 0.274
+TNS   : 0.000
+
 Type  : Fast 1100mV 0C Model Hold 'clk'
-Slack : 0.091
+Slack : 0.075
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'pulse'
-Slack : 0.216
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'switch2'
-Slack : 0.219
+Slack : 0.137
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'switch1'
-Slack : 0.278
+Slack : 0.220
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'switch2'
-Slack : -0.138
-TNS   : -0.970
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'switch1'
-Slack : -0.105
-TNS   : -0.708
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.093
+TNS   : -2.449
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pulse'
-Slack : -0.093
-TNS   : -0.369
+Slack : -0.091
+TNS   : -0.362
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
-Slack : -0.092
-TNS   : -2.807
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'switch1'
+Slack : 0.018
+TNS   : 0.000
 
 ------------------------------------------------------------
